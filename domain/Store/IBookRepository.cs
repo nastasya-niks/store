@@ -8,5 +8,6 @@ namespace Store
 {
     internal interface IBookRepository
     {
+        Book[] GetByTitle(string titlePart);
     }
 }
