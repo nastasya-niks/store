@@ -1,0 +1,656 @@
+Microsoft Windows [Version 10.0.22621.1992]
+(c) Корпорация Майкрософт (Microsoft Corporation). Все права защищены.
+
+C:\Users\anast>git
+usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           [--config-env=<name>=<envvar>] <command> [<args>]
+
+These are common Git commands used in various situations:
+
+start a working area (see also: git help tutorial)
+   clone     Clone a repository into a new directory
+   init      Create an empty Git repository or reinitialize an existing one
+
+work on the current change (see also: git help everyday)
+   add       Add file contents to the index
+   mv        Move or rename a file, a directory, or a symlink
+   restore   Restore working tree files
+   rm        Remove files from the working tree and from the index
+
+examine the history and state (see also: git help revisions)
+   bisect    Use binary search to find the commit that introduced a bug
+   diff      Show changes between commits, commit and working tree, etc
+   grep      Print lines matching a pattern
+   log       Show commit logs
+   show      Show various types of objects
+   status    Show the working tree status
+
+grow, mark and tweak your common history
+   branch    List, create, or delete branches
+   commit    Record changes to the repository
+   merge     Join two or more development histories together
+   rebase    Reapply commits on top of another base tip
+   reset     Reset current HEAD to the specified state
+   switch    Switch branches
+   tag       Create, list, delete or verify a tag object signed with GPG
+
+collaborate (see also: git help workflows)
+   fetch     Download objects and refs from another repository
+   pull      Fetch from and integrate with another repository or a local branch
+   push      Update remote refs along with associated objects
+
+'git help -a' and 'git help -g' list available subcommands and some
+concept guides. See 'git help <command>' or 'git help <concept>'
+to read about a specific subcommand or concept.
+See 'git help git' for an overview of the system.
+
+C:\Users\anast>dir
+ Том в устройстве C имеет метку Windows
+ Серийный номер тома: 4428-FEA3
+
+ Содержимое папки C:\Users\anast
+
+21.07.2023  10:44    <DIR>          .
+02.03.2023  10:27    <DIR>          ..
+18.07.2023  20:04    <DIR>          .dotnet
+19.07.2023  21:43    <DIR>          .nuget
+18.07.2023  20:11    <DIR>          .templateengine
+02.03.2023  10:27    <DIR>          Contacts
+19.07.2023  21:57    <DIR>          Documents
+10.08.2023  11:04    <DIR>          Downloads
+02.03.2023  10:27    <DIR>          Favorites
+02.03.2023  10:27    <DIR>          Links
+02.03.2023  10:27    <DIR>          Music
+01.03.2023  18:39    <DIR>          OneDrive
+18.07.2023  19:54    <DIR>          PCManger
+21.07.2023  10:37         8 388 608 product.mdf
+21.07.2023  10:44         8 388 608 ProductAndCategories.mdf
+21.07.2023  11:11         8 388 608 ProductAndCategories_log.ldf
+21.07.2023  10:56         8 388 608 product_log.ldf
+02.03.2023  10:27    <DIR>          Saved Games
+02.03.2023  10:27    <DIR>          Searches
+18.07.2023  20:37    <DIR>          source
+13.11.2022  21:59    <DIR>          Tracing
+02.03.2023  10:27    <DIR>          Videos
+               4 файлов     33 554 432 байт
+              18 папок  61 523 017 728 байт свободно
+
+C:\Users\anast>cd source
+
+C:\Users\anast\source>cd repos
+
+C:\Users\anast\source\repos>dir
+ Том в устройстве C имеет метку Windows
+ Серийный номер тома: 4428-FEA3
+
+ Содержимое папки C:\Users\anast\source\repos
+
+25.07.2023  12:08    <DIR>          .
+18.07.2023  20:37    <DIR>          ..
+18.07.2023  23:18    <DIR>          NewTestPropject
+21.07.2023  11:10    <DIR>          Shape
+25.07.2023  12:08    <DIR>          TestConstructor
+               0 файлов              0 байт
+               5 папок  61 524 754 432 байт свободно
+
+C:\Users\anast\source\repos>git clone https://github.com/nastasya-niks/store.git
+Cloning into 'store'...
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (4/4), done.
+remote: Total 5 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (5/5), 4.27 KiB | 4.27 MiB/s, done.
+
+C:\Users\anast\source\repos>cd store
+
+C:\Users\anast\source\repos\store>dir
+ Том в устройстве C имеет метку Windows
+ Серийный номер тома: 4428-FEA3
+
+ Содержимое папки C:\Users\anast\source\repos\store
+
+10.08.2023  11:09    <DIR>          .
+10.08.2023  11:09    <DIR>          ..
+10.08.2023  11:09             7 258 .gitignore
+10.08.2023  11:09             1 235 LICENSE
+10.08.2023  11:09                 7 README.md
+               3 файлов          8 500 байт
+               2 папок  61 531 856 896 байт свободно
+
+C:\Users\anast\source\repos\store>dotnet
+
+Usage: dotnet [options]
+Usage: dotnet [path-to-application]
+
+Options:
+  -h|--help         Display help.
+  --info            Display .NET information.
+  --list-sdks       Display the installed SDKs.
+  --list-runtimes   Display the installed runtimes.
+
+path-to-application:
+  The path to an application .dll file to execute.
+
+C:\Users\anast\source\repos\store>dotnet new sln
+
+Вас приветствует .NET 7.0!
+---------------------
+Версия пакета SDK: 7.0.306
+
+Телеметрия
+---------
+Средства .NET собирают данные об использовании для повышения удобства. Данные собираются корпорацией Майкрософт и предоставляются сообществу. Вы можете отключить отправку данных телеметрии, установив значение "1" или "true" для переменной среды DOTNET_CLI_TELEMETRY_OPTOUT в подходящей оболочке.
+
+Дополнительные сведения о сборе данных телеметрии средствами CLI .NET см. на странице https://aka.ms/dotnet-cli-telemetry.
+
+----------------
+Установлен сертификат разработки HTTPS в ASP.NET Core.
+Чтобы сделать сертификат доверенным, выполните команду "dotnet dev-certs https --trust" (только в Windows и macOS).
+Дополнительные сведения об HTTPS: https://aka.ms/dotnet-https
+----------------
+Как написать свое первое приложение: https://aka.ms/dotnet-hello-world
+Узнать о новых возможностях: https://aka.ms/dotnet-whats-new
+Просмотреть документацию: https://aka.ms/dotnet-docs
+Сообщить о проблемах и найти исходный код на GitHub: https://github.com/dotnet/core
+Для просмотра доступных команд введите команду "dotnet --help" или посетите следующую страницу: https://aka.ms/dotnet-cli.
+--------------------------------------------------------------------------------------
+Шаблон "Файл решения" успешно создан.
+
+
+C:\Users\anast\source\repos\store>dir
+ Том в устройстве C имеет метку Windows
+ Серийный номер тома: 4428-FEA3
+
+ Содержимое папки C:\Users\anast\source\repos\store
+
+10.08.2023  16:36    <DIR>          .
+10.08.2023  11:09    <DIR>          ..
+10.08.2023  11:09             7 258 .gitignore
+10.08.2023  11:09             1 235 LICENSE
+10.08.2023  11:09                 7 README.md
+10.08.2023  16:36               441 store.sln
+               4 файлов          8 941 байт
+               2 папок  57 921 978 368 байт свободно
+
+C:\Users\anast\source\repos\store>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        store.sln
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\anast\source\repos\store>git add.
+git: 'add.' is not a git command. See 'git --help'.
+
+The most similar command is
+        add
+
+C:\Users\anast\source\repos\store>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        store.sln
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\anast\source\repos\store>git add .
+
+C:\Users\anast\source\repos\store>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   store.sln
+
+
+C:\Users\anast\source\repos\store>git commit -a
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'anast@Anastasia.(none)')
+
+C:\Users\anast\source\repos\store>git config --anastasia
+error: unknown option `anastasia'
+usage: git config [<options>]
+
+Config file location
+    --global              use global config file
+    --system              use system config file
+    --local               use repository config file
+    --worktree            use per-worktree config file
+    -f, --file <file>     use given config file
+    --blob <blob-id>      read config from given blob object
+
+Action
+    --get                 get value: name [value-pattern]
+    --get-all             get all values: key [value-pattern]
+    --get-regexp          get values for regexp: name-regex [value-pattern]
+    --get-urlmatch        get value specific for the URL: section[.var] URL
+    --replace-all         replace all matching variables: name value [value-pattern]
+    --add                 add a new variable: name value
+    --unset               remove a variable: name [value-pattern]
+    --unset-all           remove all matches: name [value-pattern]
+    --rename-section      rename section: old-name new-name
+    --remove-section      remove a section: name
+    -l, --list            list all
+    --fixed-value         use string equality when comparing values to 'value-pattern'
+    -e, --edit            open an editor
+    --get-color           find the color configured: slot [default]
+    --get-colorbool       find the color setting: slot [stdout-is-tty]
+
+Type
+    -t, --type <type>     value is given this type
+    --bool                value is "true" or "false"
+    --int                 value is decimal number
+    --bool-or-int         value is --bool or --int
+    --bool-or-str         value is --bool or string
+    --path                value is a path (file or directory name)
+    --expiry-date         value is an expiry date
+
+Other
+    -z, --null            terminate values with NUL byte
+    --name-only           show variable names only
+    --includes            respect include directives on lookup
+    --show-origin         show origin of config (file, standard input, blob, command line)
+    --show-scope          show scope of config (worktree, local, global, system, command)
+    --default <value>     with --get, use default value when missing entry
+
+
+C:\Users\anast\source\repos\store>git config --global user.name "anastasia"
+
+C:\Users\anast\source\repos\store>git commit -a
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'anast@Anastasia.(none)')
+
+C:\Users\anast\source\repos\store>git config --global user.email "anastasia.n.0928@gmail.com"
+
+C:\Users\anast\source\repos\store>git commit -a
+[main 219277a] Создать решение
+ 1 file changed, 14 insertions(+)
+ create mode 100644 store.sln
+
+C:\Users\anast\source\repos\store>git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+C:\Users\anast\source\repos\store>dir
+ Том в устройстве C имеет метку Windows
+ Серийный номер тома: 4428-FEA3
+
+ Содержимое папки C:\Users\anast\source\repos\store
+
+10.08.2023  16:36    <DIR>          .
+10.08.2023  11:09    <DIR>          ..
+10.08.2023  11:09             7 258 .gitignore
+10.08.2023  11:09             1 235 LICENSE
+10.08.2023  11:09                 7 README.md
+10.08.2023  16:36               441 store.sln
+               4 файлов          8 941 байт
+               2 папок  57 897 967 616 байт свободно
+
+C:\Users\anast\source\repos\store>md domain
+
+C:\Users\anast\source\repos\store>dir
+ Том в устройстве C имеет метку Windows
+ Серийный номер тома: 4428-FEA3
+
+ Содержимое папки C:\Users\anast\source\repos\store
+
+10.08.2023  18:56    <DIR>          .
+10.08.2023  11:09    <DIR>          ..
+10.08.2023  11:09             7 258 .gitignore
+10.08.2023  18:56    <DIR>          domain
+10.08.2023  11:09             1 235 LICENSE
+10.08.2023  11:09                 7 README.md
+10.08.2023  16:36               441 store.sln
+               4 файлов          8 941 байт
+               3 папок  57 897 836 544 байт свободно
+
+C:\Users\anast\source\repos\store>git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+C:\Users\anast\source\repos\store>dotnet new classlib --output "domain/Store" --name "Store"
+Шаблон "Библиотека классов" успешно создан.
+
+Идет обработка действий после создания...
+Восстановление C:\Users\anast\source\repos\store\domain\Store\Store.csproj:
+  Определение проектов для восстановления...
+  Восстановлен C:\Users\anast\source\repos\store\domain\Store\Store.csproj (за 49 ms).
+Восстановление выполнено.
+
+
+
+C:\Users\anast\source\repos\store>dir
+ Том в устройстве C имеет метку Windows
+ Серийный номер тома: 4428-FEA3
+
+ Содержимое папки C:\Users\anast\source\repos\store
+
+10.08.2023  18:56    <DIR>          .
+10.08.2023  11:09    <DIR>          ..
+10.08.2023  11:09             7 258 .gitignore
+10.08.2023  19:04    <DIR>          domain
+10.08.2023  11:09             1 235 LICENSE
+10.08.2023  11:09                 7 README.md
+10.08.2023  16:36               441 store.sln
+               4 файлов          8 941 байт
+               3 папок  57 898 872 832 байт свободно
+
+C:\Users\anast\source\repos\store>dir domain
+ Том в устройстве C имеет метку Windows
+ Серийный номер тома: 4428-FEA3
+
+ Содержимое папки C:\Users\anast\source\repos\store\domain
+
+10.08.2023  19:04    <DIR>          .
+10.08.2023  18:56    <DIR>          ..
+10.08.2023  19:04    <DIR>          Store
+               0 файлов              0 байт
+               3 папок  57 898 872 832 байт свободно
+
+C:\Users\anast\source\repos\store>dir domain\Store
+ Том в устройстве C имеет метку Windows
+ Серийный номер тома: 4428-FEA3
+
+ Содержимое папки C:\Users\anast\source\repos\store\domain\Store
+
+10.08.2023  19:04    <DIR>          .
+10.08.2023  19:04    <DIR>          ..
+10.08.2023  19:04                52 Class1.cs
+10.08.2023  19:04    <DIR>          obj
+10.08.2023  19:04               215 Store.csproj
+               2 файлов            267 байт
+               3 папок  57 898 659 840 байт свободно
+
+C:\Users\anast\source\repos\store>dotnet sln add domain\Store\Store.csproj
+Проект "domain\Store\Store.csproj" добавлен в решение.
+
+C:\Users\anast\source\repos\store>type store.sln
+я╗┐
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "domain", "domain", "{A61FA3C3-F942-49F7-BD0A-EC7F59D410D0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Store", "domain\Store\Store.csproj", "{47B0E0A2-1859-4B77-AEC7-5B34BE9D55A5}"
+EndProject
+Global
+        GlobalSection(SolutionConfigurationPlatforms) = preSolution
+                Debug|Any CPU = Debug|Any CPU
+                Release|Any CPU = Release|Any CPU
+        EndGlobalSection
+        GlobalSection(SolutionProperties) = preSolution
+                HideSolutionNode = FALSE
+        EndGlobalSection
+        GlobalSection(ProjectConfigurationPlatforms) = postSolution
+                {47B0E0A2-1859-4B77-AEC7-5B34BE9D55A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+                {47B0E0A2-1859-4B77-AEC7-5B34BE9D55A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+                {47B0E0A2-1859-4B77-AEC7-5B34BE9D55A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+                {47B0E0A2-1859-4B77-AEC7-5B34BE9D55A5}.Release|Any CPU.Build.0 = Release|Any CPU
+        EndGlobalSection
+        GlobalSection(NestedProjects) = preSolution
+                {47B0E0A2-1859-4B77-AEC7-5B34BE9D55A5} = {A61FA3C3-F942-49F7-BD0A-EC7F59D410D0}
+        EndGlobalSection
+EndGlobal
+
+C:\Users\anast\source\repos\store>git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   store.sln
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        domain/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\Users\anast\source\repos\store>git add .
+
+C:\Users\anast\source\repos\store>git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   domain/Store/Book.cs
+        new file:   domain/Store/Store.csproj
+        modified:   store.sln
+
+
+C:\Users\anast\source\repos\store>git commit -a
+[main 39e8804] Описать сущность Book
+ 3 files changed, 28 insertions(+)
+ create mode 100644 domain/Store/Book.cs
+ create mode 100644 domain/Store/Store.csproj
+
+C:\Users\anast\source\repos\store>git status
+On branch main
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        domain/Store/IBookRepository.cs
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\anast\source\repos\store>git add .
+
+C:\Users\anast\source\repos\store>git commit -a
+[main 613e1cb]  Добавить интерфейс репозитория книг
+ 1 file changed, 12 insertions(+)
+ create mode 100644 domain/Store/IBookRepository.cs
+
+C:\Users\anast\source\repos\store>git status
+On branch main
+Your branch is ahead of 'origin/main' by 3 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   domain/Store/Book.cs
+        modified:   domain/Store/IBookRepository.cs
+        modified:   store.sln
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Infrastructure/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\Users\anast\source\repos\store>git add .
+
+C:\Users\anast\source\repos\store>git status
+On branch main
+Your branch is ahead of 'origin/main' by 3 commits.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   Infrastructure/Store.Memory/BookRepository.cs
+        new file:   Infrastructure/Store.Memory/Store.Memory.csproj
+        modified:   domain/Store/Book.cs
+        modified:   domain/Store/IBookRepository.cs
+        modified:   store.sln
+
+
+C:\Users\anast\source\repos\store>git commit -a
+[main 70d4915] Добавить реализацию репозитория книг в памяти
+ 5 files changed, 42 insertions(+), 5 deletions(-)
+ create mode 100644 Infrastructure/Store.Memory/BookRepository.cs
+ create mode 100644 Infrastructure/Store.Memory/Store.Memory.csproj
+
+C:\Users\anast\source\repos\store>git status
+On branch main
+Your branch is ahead of 'origin/main' by 4 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+C:\Users\anast\source\repos\store>git add .
+warning: in the working copy of 'Presentation/Store.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Presentation/Store.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Presentation/Store.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Presentation/Store.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Presentation/Store.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Presentation/Store.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Presentation/Store.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Presentation/Store.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Presentation/Store.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Presentation/Store.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Presentation/Store.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Presentation/Store.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Presentation/Store.Web/wwwroot/lib/bootstrap/dist/css/bootstrap.css', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Presentation/Store.Web/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Presentation/Store.Web/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Presentation/Store.Web/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Presentation/Store.Web/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Presentation/Store.Web/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Presentation/Store.Web/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Presentation/Store.Web/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Presentation/Store.Web/wwwroot/lib/bootstrap/dist/js/bootstrap.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Presentation/Store.Web/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Presentation/Store.Web/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Presentation/Store.Web/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Presentation/Store.Web/wwwroot/lib/jquery-validation/dist/jquery.validate.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Presentation/Store.Web/wwwroot/lib/jquery-validation/dist/jquery.validate.min.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Presentation/Store.Web/wwwroot/lib/jquery/dist/jquery.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Presentation/Store.Web/wwwroot/lib/jquery/dist/jquery.min.js', LF will be replaced by CRLF the next time Git touches it
+
+C:\Users\anast\source\repos\store>git status
+On branch main
+Your branch is ahead of 'origin/main' by 4 commits.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   Infrastructure/Store.Memory/BookRepository.cs
+        new file:   Presentation/Store.Web/Controllers/HomeController.fs
+        new file:   Presentation/Store.Web/Models/ErrorViewModel.fs
+        new file:   Presentation/Store.Web/Program.fs
+        new file:   Presentation/Store.Web/Properties/launchSettings.json
+        new file:   Presentation/Store.Web/Store.Web.fsproj
+        new file:   Presentation/Store.Web/Views/Home/Index.cshtml
+        new file:   Presentation/Store.Web/Views/Home/Privacy.cshtml
+        new file:   Presentation/Store.Web/Views/Shared/Error.cshtml
+        new file:   Presentation/Store.Web/Views/Shared/_Layout.cshtml
+        new file:   Presentation/Store.Web/Views/Shared/_ValidationScriptsPartial.cshtml
+        new file:   Presentation/Store.Web/Views/_ViewImports.cshtml
+        new file:   Presentation/Store.Web/Views/_ViewStart.cshtml
+        new file:   Presentation/Store.Web/appsettings.Development.json
+        new file:   Presentation/Store.Web/appsettings.json
+        new file:   Presentation/Store.Web/wwwroot/css/site.css
+        new file:   Presentation/Store.Web/wwwroot/favicon.ico
+        new file:   Presentation/Store.Web/wwwroot/js/site.js
+        new file:   Presentation/Store.Web/wwwroot/lib/bootstrap/LICENSE
+        new file:   Presentation/Store.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css
+        new file:   Presentation/Store.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css.map
+        new file:   Presentation/Store.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css
+        new file:   Presentation/Store.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css.map
+        new file:   Presentation/Store.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css
+        new file:   Presentation/Store.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map
+        new file:   Presentation/Store.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css
+        new file:   Presentation/Store.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map
+        new file:   Presentation/Store.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css
+        new file:   Presentation/Store.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css.map
+        new file:   Presentation/Store.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css
+        new file:   Presentation/Store.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map
+        new file:   Presentation/Store.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css
+        new file:   Presentation/Store.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map
+        new file:   Presentation/Store.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css
+        new file:   Presentation/Store.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map
+        new file:   Presentation/Store.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css
+        new file:   Presentation/Store.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css.map
+        new file:   Presentation/Store.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css
+        new file:   Presentation/Store.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map
+        new file:   Presentation/Store.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css
+        new file:   Presentation/Store.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map
+        new file:   Presentation/Store.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css
+        new file:   Presentation/Store.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map
+        new file:   Presentation/Store.Web/wwwroot/lib/bootstrap/dist/css/bootstrap.css
+        new file:   Presentation/Store.Web/wwwroot/lib/bootstrap/dist/css/bootstrap.css.map
+        new file:   Presentation/Store.Web/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css
+        new file:   Presentation/Store.Web/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map
+        new file:   Presentation/Store.Web/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css
+        new file:   Presentation/Store.Web/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css.map
+        new file:   Presentation/Store.Web/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css
+        new file:   Presentation/Store.Web/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map
+        new file:   Presentation/Store.Web/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js
+        new file:   Presentation/Store.Web/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map
+        new file:   Presentation/Store.Web/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js
+        new file:   Presentation/Store.Web/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map
+        new file:   Presentation/Store.Web/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js
+        new file:   Presentation/Store.Web/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js.map
+        new file:   Presentation/Store.Web/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js
+        new file:   Presentation/Store.Web/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js.map
+        new file:   Presentation/Store.Web/wwwroot/lib/bootstrap/dist/js/bootstrap.js
+        new file:   Presentation/Store.Web/wwwroot/lib/bootstrap/dist/js/bootstrap.js.map
+        new file:   Presentation/Store.Web/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js
+        new file:   Presentation/Store.Web/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map
+        new file:   Presentation/Store.Web/wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt
+        new file:   Presentation/Store.Web/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js
+        new file:   Presentation/Store.Web/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js
+        new file:   Presentation/Store.Web/wwwroot/lib/jquery-validation/LICENSE.md
+        new file:   Presentation/Store.Web/wwwroot/lib/jquery-validation/dist/additional-methods.js
+        new file:   Presentation/Store.Web/wwwroot/lib/jquery-validation/dist/additional-methods.min.js
+        new file:   Presentation/Store.Web/wwwroot/lib/jquery-validation/dist/jquery.validate.js
+        new file:   Presentation/Store.Web/wwwroot/lib/jquery-validation/dist/jquery.validate.min.js
+        new file:   Presentation/Store.Web/wwwroot/lib/jquery/LICENSE.txt
+        new file:   Presentation/Store.Web/wwwroot/lib/jquery/dist/jquery.js
+        new file:   Presentation/Store.Web/wwwroot/lib/jquery/dist/jquery.min.js
+        new file:   Presentation/Store.Web/wwwroot/lib/jquery/dist/jquery.min.map
+        modified:   domain/Store/IBookRepository.cs
+        modified:   store.sln
+
+
+C:\Users\anast\source\repos\store> > C:\Users\anast\source\repos\store
+Ошибка в синтаксисе команды.
+
+C:\Users\anast\source\repos\store> > C:\Users\anast\source\repos\store\cmd.txt
+Ошибка в синтаксисе команды.
+
+C:\Users\anast\source\repos\store>
